@@ -46,15 +46,14 @@ function Hero() {
         </div>
 
         <div className="hero-buttons">
-
-          <a
-  href="/resume.pdf"
-  download="Jaivignesh_P_G_Resume.pdf"
+<a
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  target="_blank"
+  rel="noopener noreferrer"
   className="btn btn-primary"
 >
   Download Resume
 </a>
-
           <a href="#contact" className="btn btn-outline">
             Contact Me
           </a>

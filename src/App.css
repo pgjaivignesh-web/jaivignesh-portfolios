@@ -1,0 +1,451 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+  background:#08111f;
+  color:white;
+}
+
+a{
+  text-decoration:none;
+}
+
+section{
+  padding:80px 10%;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#07101d;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  z-index:999;
+}
+
+nav h2{
+  color:#32b4ff;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:35px;
+}
+
+nav ul li a{
+  color:white;
+  font-weight:600;
+}
+
+nav ul li a:hover{
+  color:#33b5ff;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    padding-top:120px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    background:
+    radial-gradient(circle at top right,#173d84,transparent 35%),
+    #08111f;
+}
+.hero-left{
+  max-width:700px;
+}
+
+.hero-image{
+  width:180px;
+  height:180px;
+  margin-bottom:25px;
+}
+
+.hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #2ab6ff;
+  box-shadow:0 0 35px #1da8ff;
+}
+
+.hero h3{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.hero h1{
+  font-size:72px;
+  color:#2ab6ff;
+  margin-bottom:15px;
+  text-shadow:0 0 25px #009dff;
+}
+
+.hero h2{
+  color:#36b8ff;
+  margin-bottom:25px;
+  font-size:32px;
+}
+
+.hero p{
+  line-height:1.8;
+  color:#d3d3d3;
+  font-size:19px;
+  max-width:650px;
+}
+
+/* ================= BUTTONS ================= */
+
+.hero-buttons{
+  margin-top:35px;
+  display:flex;
+  gap:20px;
+}
+
+.btn{
+  padding:14px 30px;
+  border-radius:10px;
+  background:#2ab6ff;
+  color:white;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 25px #2ab6ff;
+}
+
+.btn-outline{
+  background:transparent;
+  border:2px solid #2ab6ff;
+}
+
+.btn-outline:hover{
+  background:#2ab6ff;
+}
+
+/* ================= SOCIAL ================= */
+
+.social-icons{
+  display:flex;
+  gap:18px;
+  margin-top:25px;
+}
+
+.social-icons a{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:2px solid #2ab6ff;
+  color:#2ab6ff;
+  transition:.3s;
+}
+
+.social-icons a:hover{
+  background:#2ab6ff;
+  color:white;
+  box-shadow:0 0 20px #2ab6ff;
+}
+
+/* ================= HEADINGS ================= */
+
+.section-title{
+  text-align:center;
+  font-size:50px;
+  margin-bottom:60px;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+.project-card{
+  background:#111c31;
+  padding:30px;
+  border-radius:18px;
+  border:1px solid rgba(80,170,255,.3);
+  transition:.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 30px rgba(0,170,255,.3);
+}
+
+.project-card h3{
+  margin-bottom:15px;
+  color:white;
+  font-size:28px;
+}
+
+.tech-stack{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:20px 0;
+}
+
+.tech-stack span{
+  padding:8px 16px;
+  border-radius:30px;
+  background:#173d84;
+  color:#5dc5ff;
+  font-size:14px;
+}
+
+.project-card p{
+  color:#d0d0d0;
+  line-height:1.7;
+  margin-bottom:18px;
+}
+
+.github-link{
+  color:#31b8ff;
+  font-weight:600;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.about p{
+  line-height:1.8;
+  color:#d4d4d4;
+  margin-top:20px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+  text-align:center;
+}
+
+.contact a{
+  color:#2ab6ff;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  text-align:center;
+  padding:30px;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:#9e9e9e;
+}
+/* ABOUT */
+
+.about{
+padding:100px 10%;
+}
+
+.section-subtitle{
+text-align:center;
+color:#31b7ff;
+font-weight:600;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.about-content{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:40px;
+margin-top:50px;
+}
+
+.about-card{
+background:#111c31;
+padding:35px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.about-card h3{
+font-size:30px;
+margin-bottom:20px;
+color:#2ab6ff;
+}
+
+.about-card p{
+line-height:1.9;
+color:#d4d4d4;
+margin-bottom:18px;
+font-size:18px;
+}
+
+.about-info{
+display:grid;
+gap:20px;
+}
+
+.info-box{
+background:#111c31;
+padding:25px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.info-box h4{
+color:#2ab6ff;
+margin-bottom:12px;
+}
+
+.info-box p{
+font-weight:600;
+}
+
+.info-box span{
+color:#bfbfbf;
+font-size:15px;
+}
+
+@media(max-width:900px){
+
+.about-content{
+grid-template-columns:1fr;
+}
+
+}
+/* ================= NAVBAR ================= */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(6,12,25,.92);
+backdrop-filter:blur(10px);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:white;
+}
+
+.logo span{
+color:#2ab6ff;
+}
+
+.nav-links{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+font-weight:600;
+position:relative;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#2ab6ff;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-8px;
+width:0;
+height:3px;
+background:#2ab6ff;
+transition:.3s;
+border-radius:10px;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+/* CONTACT */
+
+.contact{
+padding:100px 10%;
+text-align:center;
+}
+
+.contact-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.contact-item{
+background:#111c31;
+padding:35px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
+}
+
+.contact-item:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(0,180,255,.25);
+}
+
+.contact-item h3{
+color:#2ab6ff;
+margin-bottom:15px;
+}
+
+.contact-item p,
+.contact-item a{
+color:#d7d7d7;
+text-decoration:none;
+}
+/* ================= CERTIFICATES ================= */
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.project-card h3{
+    font-size: 2rem;
+    line-height: 1.35;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.project-card .btn{
+    width: fit-content;
+    margin-top: auto;
+}
